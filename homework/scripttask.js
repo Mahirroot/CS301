@@ -3,26 +3,52 @@
 // 1) Ad soyad ata adinizi butov sheklde goturun ve array sheklinde herflerine ayirin(split)
 // let fullName = 'Mahir Shamilli Rahim'
 // console.log(fullName.split('') ) ;
+                         //FUNCTION USULU
+// function name() {
+//     console.log(fullName.split('') ) ;
+// }
+// name()
+
 
 // 2) FullName'də soyadinizi adinizin onune keciren alqoritm yazin
 // let text = fullName.slice ( 6 ,14 )+" "+ fullName.slice (0, 5) + " "+ fullName.slice(15, 20)
 // console.log(text);
+                         //FUNCTION USULU
+// function name() {
+//    let text =  fullName.slice ( 6 ,14 )+" "+ fullName.slice (0, 5) + " "+ fullName.slice(15, 20)
+//     console.log(text);
+// }
+// name()
+
+
 // 3) Alinan yeni arrayi stringe cevirin(join)
 // string = text.split()
 // console.log(string);
-// QEYD - Bu tasklarda "arr" arrayindan istifade edilecekdir.....
+                        //FUNCTION USULU
+// function firstname() {
+//     string = text.split()
+//     console.log(string);
+// }
+// firstname()
 
 let arr = [ 4, 5, 2, 1, 5, 2, 5, 3, 5, 6, 2, 1, 6, 2, 6, 2, 5, 3, 2, 7, 4, 6, 4, 5, 6, 2, 5, 6, 3, 7, 3, 7, ];
 
+// QEYD - Bu tasklarda "arr" arrayindan istifade edilecekdir.....
+
 //4) Yuxaridaki arrayda 5 reqeminin nece defe tekrarlandigini tapin
 // for (let i = 0 ;i < arr.length ; i ++) {
-//   if (arr[i]==5)
-//   {
-//     console.log(arr[i])
-//   }
-// }
+//       if (arr[i]==5)
+//       {
+//             console.log(arr[i])
+//           }
+//         }
+        //diger usul 
+//   let result = arr.filter((item, index) => item == 5) 
+//   console.log(result);                                          
+                                                 
+                                                
 
-//5) Yuxaridaki arraydaki butun reqemlerin cemini tapin
+//5) Yuxaridaki arraydaki butun reqemlerin cemini tapincd
 // let cem = 0
 // for ( let i = 0 ; i < arr.length ; i ++){
 // cem = cem + arr[i]
@@ -112,60 +138,60 @@ let arr = [ 4, 5, 2, 1, 5, 2, 5, 3, 5, 6, 2, 1, 6, 2, 6, 2, 5, 3, 2, 7, 4, 6, 4,
   
     
 
-let arr2 = [
-    {
-          name: 'test',
-          key: 1
-  },
-  {
-      name: 'task',
-      key: 2
-  },
-  {
-      name: 'tanqo',
-      key: 3
-  },
-  {
-      name: 'like',
-      key: 4
-  },
-  {
-      name: 'task',
-      key: 5
-  },
-  {
-      name: 'trust',
-      key: 6
-  },
-  {
-      name: 'test',
-      key: 7
-  },
-  {
-      name: 'last',
-      key: 8
-  },
-  {
-      name: 'tanqo',
-      key: 9
-  },
-  {
-      name: 'elephant',
-      key: 10
-  },
-  {
-      name: 'love',
-      key: 11
-  },
-  {
-      name: 'small',
-      key: 12
-  },
-  {
-      name: 'little',
-      key: 13
-  },
-]
+// let arr2 = [
+//     {
+//           name: 'test',
+//           key: 1
+//   },
+//   {
+//       name: 'task',
+//       key: 2
+//   },
+//   {
+//       name: 'tanqo',
+//       key: 3
+//   },
+//   {
+//       name: 'like',
+//       key: 4
+//   },
+//   {
+//       name: 'task',
+//       key: 5
+//   },
+//   {
+//       name: 'trust',
+//       key: 6
+//   },
+//   {
+//       name: 'test',
+//       key: 7
+//   },
+//   {
+//       name: 'last',
+//       key: 8
+//   },
+//   {
+//       name: 'tanqo',
+//       key: 9
+//   },
+//   {
+//       name: 'elephant',
+//       key: 10
+//   },
+//   {
+//       name: 'love',
+//       key: 11
+//   },
+//   {
+//       name: 'small',
+//       key: 12
+//   },
+//   {
+//       name: 'little',
+//       key: 13
+//   },
+// ]
 
 //Aşağıdakı hər bir taskı function icərisində yazın.
 
