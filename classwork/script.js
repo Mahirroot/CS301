@@ -50,18 +50,49 @@
 // }
 // console.log(sum);
 
-// const username = document.querySelector('#username')
-// const password = document.querySelector('#password')
-// const email = document.querySelector('#email')
-// const myform = document.querySelector('#myform')
 
 
-// myform.addEventListener('submit', (e) => {
-//     e.preventDefault()
-//     const user = {
-//         username :username.value ,
-//         email:email.value, 
-//         password : password.value
-//     }
-//     console.log(user);
-// })
+const username = document.querySelector('#username')
+const email = document.querySelector('#email')
+const password = document.querySelector('#password')
+const confirmpassword = document.querySelector('#confirmpassword')
+const isAdmin = document.querySelector('#admin')
+const myForm = document.querySelector('#myForm')
+const submit = document.querySelector('#submit')
+myForm.addEventListener ('submit', (e) => {
+    e.preventDefault()
+    const user = {
+        username: username.value,
+        email: email.value,
+        password: password.value,
+        confirmpassword: password.value,
+        admin: admin.value
+    }
+   
+    if (confirmpassword.value !==password.value) {
+    console.log('passwords match')
+    
+} else if (isAdmin.checked){
+    window.location = 'admin.html'
+}
+else  {
+console.log('user',user); 
+}
+})
+
+function removeDisabled(anyInput){
+    anyInput.addEventListener('change', () => {
+        if (username.value && email.value && password.value &&confirmpassword.value) {
+            submit.removeAttribute ('disabled', true)
+        }else {
+            submit.setAttribute ('disabled', true)
+
+        }
+    }
+    )
+}
+
+removeDisabled(username)
+removeDisabled(email)
+removeDisabled(password)
+removeDisabled(confirmpassword)
