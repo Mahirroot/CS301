@@ -43,10 +43,14 @@ let arr = [ 4, 5, 2, 1, 5, 2, 5, 3, 5, 6, 2, 1, 6, 2, 6, 2, 5, 3, 2, 7, 4, 6, 4,
 //           }
 //         }
         //diger usul 
-//   let result = arr.filter((item, index) => item == 5) 
-//   console.log(result);                                          
-                                                 
-                                                
+  // let result = arr.filter((item, index) => item == 5) 
+  // console.log(result);                                          
+                              // function   usulu
+//  function username() { 
+//   let result = arr.filter((item, index) => item == 5)
+//   console.log(result); 
+// }                                             
+// username()                                                
 
 //5) Yuxaridaki arraydaki butun reqemlerin cemini tapincd
 // let cem = 0
@@ -56,7 +60,16 @@ let arr = [ 4, 5, 2, 1, 5, 2, 5, 3, 5, 6, 2, 1, 6, 2, 6, 2, 5, 3, 2, 7, 4, 6, 4,
 //   console.log(cem)
 // }
 // }
-
+                     //function usulu
+  function username() { 
+let cem = 0
+for ( let i = 0 ; i < arr.length ; i ++){
+cem = cem + arr[i]
+console.log(cem); 
+}                                             
+}
+username() 
+                    
 //6) arrayda tekrar olunan reqemleri artan sira ile duzun
 // let arr2= arr.sort((a,b) => a-b)
 // console.log(arr2)
