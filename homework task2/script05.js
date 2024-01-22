@@ -4,17 +4,23 @@ const password = document.querySelector('#password');
 const myForm = document.querySelector('#myForm');
 const submit = document.querySelector('#submit');
 
-myForm.addEventListener ('submit' , (e) => {
-    e.preventDefault();
-    const user = {
-        username: username.value,
-        email: email.value,
-        password: password.value
-    };
-   
-    console.log(user); 
-    window.location = '06.html';
 
 
-});
+function removeDisabled(anyInput){
 
+    anyInput.addEventListener('change', () => {
+        console.log(anyInput.value);
+
+        if (username.value && email.value && password.value ) {
+            submit.removeAttribute ('disabled', true)
+        }else {
+            submit.setAttribute ('disabled', true)
+
+        }
+    }
+    )
+}
+
+removeDisabled(username)
+removeDisabled(email)
+removeDisabled(password)
